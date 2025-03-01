@@ -242,17 +242,17 @@ public class JavadocParagraphCheckTest extends AbstractModuleTestSupport {
         verifyWithInlineConfigParser(
                 getPath("InputJavadocParagraphIncorrectOpenClosedTag2.java"), expected);
     }
-
-    @Test
+     @Test
     public void testJavadocParagraphOpenClosedTag3() throws Exception {
         final String[] expected = {
             "15:7: " + getCheckMessage(MSG_MISPLACED_TAG),
             "23:7: " + getCheckMessage(MSG_MISPLACED_TAG),
-            "31:7: " + getCheckMessage(MSG_MISPLACED_TAG),
+            "31:7: " + getCheckMessage(MSG_MISPLACED_TAG)
         };
 
         verifyWithInlineConfigParser(
-                getPath("InputJavadocParagraphIncorrectOpenClosedTag3.java"), expected);
+            getPath("InputJavadocParagraphIncorrectOpenClosedTag3.java")
+        );
     }
 
     @Test
@@ -260,10 +260,12 @@ public class JavadocParagraphCheckTest extends AbstractModuleTestSupport {
         final String[] expected = {
             "15:7: " + getCheckMessage(MSG_MISPLACED_TAG),
             "23:7: " + getCheckMessage(MSG_MISPLACED_TAG),
-            "31:7: " + getCheckMessage(MSG_MISPLACED_TAG),
+            "31:7: " + getCheckMessage(MSG_MISPLACED_TAG)
         };
 
         verifyWithInlineConfigParser(
-                getPath("InputJavadocParagraphIncorrect6.java"), expected);
+            getPath("InputJavadocParagraphIncorrect6.java")
+        );
     }
 }
+
